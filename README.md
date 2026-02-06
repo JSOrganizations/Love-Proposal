@@ -37,7 +37,7 @@ Experience the live version here:
 
 ### Personalized Link
 Add your special someone's name to the URL:  
-`https://botfather.cloud/Tools/Propose/?name=YourName`
+`https://botfather.cloud/Tools/Propose/?vidansh`
 
 ---
 
@@ -45,7 +45,7 @@ Add your special someone's name to the URL:
 
 ### 1. Change the Name
 Modify the name in the URL query string:  
-`?name=NewName`
+`?vidansh`
 
 ### 2. Update Animations
 Replace the Lottie JSON files:
