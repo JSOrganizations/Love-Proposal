@@ -1,72 +1,79 @@
+:root {
+    --primary-color: #e91e63;
+    --primary-color-rgb: 233, 30, 99;
+    --secondary-color: #ff4081;
+    --background-color: #ffe5e5;
+}
+
 * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-        body {
-            width: 100%;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #ffe5e5;
-            overflow: hidden;
-        }
-        .container {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            align-items: center;
-            gap: 20px;
-            max-width: 500px;
-            margin: 20px;
-            position: relative;
-        }
-        .sticker {
-            width: 200px;
-            height: 200px;
-            margin: 0 auto;
-        }
-        h1 {
-            color: #e91e63;
-            font-size: 2.2rem;
-            margin: 15px 0;
-        }
-        p {
-            color: #333;
-            font-size: 1.3rem;
-            margin-bottom: 20px;
-        }
-        .btn {
-            display: flex;
-            gap: 25px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .btn a {
-            text-decoration: none;
-            color: #fff;
-            background: #e91e63;
-            padding: 12px 30px;
-            border-radius: 25px;
-            box-shadow: 0 4px 15px rgba(233,30,99,0.3);
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
-        }
-        .btn a:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(233,30,99,0.4);
-        }
-        #move-random {
-            cursor: pointer;
-            background: #ff4081 !important;
-        }
-        .proposal-screen {
-            display: none;
-            animation: fadeIn 0.5s ease;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    overflow: hidden;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 500px;
+    margin: 20px;
+    position: relative;
+}
+.sticker {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+h1 {
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    margin: 15px 0;
+}
+p {
+    color: #333;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+.btn {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.btn a {
+    text-decoration: none;
+    color: #fff;
+    background: var(--primary-color);
+    padding: 12px 30px;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(var(--primary-color-rgb), 0.3);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+.btn a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(var(--primary-color-rgb), 0.4);
+}
+#move-random {
+    cursor: pointer;
+    background: var(--secondary-color) !important;
+}
+.proposal-screen {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

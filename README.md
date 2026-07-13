@@ -33,11 +33,29 @@ A romantic and interactive proposal website designed to create unforgettable mom
 
 ### Live Demo
 Experience the live version here:  
-👉 [https://bots.lt/Tools/Propose/](https://bots.lt/Tools/Propose/)
+👉 [https://jsorganizations.github.io/Love-Proposal/](https://jsorganizations.github.io/Love-Proposal/)
 
 ### Personalized Link
 Add your special someone's name to the URL:  
-`https://bots.lt/Tools/Propose/?name=YourName`
+`https://jsorganizations.github.io/Love-Proposal/?name=YourName`
+
+---
+
+## 🛠️ Local Development / Running Locally
+
+Due to browser CORS policies, modern browsers block loading local Lottie JSON files (`animations/*.json`) when you open `index.html` directly from your file system (using the `file://` protocol). 
+
+To run the project locally with all animations displaying correctly:
+1. Open your terminal/PowerShell in this project directory.
+2. Start a local server:
+   ```bash
+   # Using Python (recommended)
+   python -m http.server 8000
+   
+   # Or using Node/npx (if installed)
+   npx serve .
+   ```
+3. Open [http://localhost:8000](http://localhost:8000) in your browser.
 
 ---
 
@@ -50,8 +68,8 @@ Modify the name in the URL query string:
 ### 2. Update Animations
 Replace the Lottie JSON files:
 1. Get new animations from [LottieFiles](https://lottiefiles.com/).
-2. Replace the existing `sticker*.json` files in the repository.
-3. Update the animation references in `script.js`.
+2. Replace the existing JSON files in the `animations/` directory.
+3. Update the animation file references in `script.js`.
 
 ### 3. Modify Colors
 Edit the CSS variables in `style.css`:
